@@ -1,18 +1,19 @@
 //Practica para casa
 //imprimir numeros pares del 1 al 100
 
-const {ask}=require('../helper/input');
+const { ask } = require('../helpers/input');
 
-function main(){
-//    let limite= Number(('Hast'));
-   // let i = 0;
-for (let i > 0 ; i <= 100 ; i ++){
-    if (i%2===0){
+async function main(){
+
+for (let i = 0 ; i <= 100 ; i ++) {
+    if (i%2===0 && i != 0){
     console. log(i);
-   
+    }else{
+        console. log('')
+    }   
 }
 }
-}
+
 main();
 
 // for (let j = 1; j <= 5; j++) {

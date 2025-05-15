@@ -14,7 +14,17 @@
 
 const { ask } = require('../helpers/input');
 
+async function main(){
+    let opcion ='';
+    let producto=[];
 
+    WHILE (OPCION !=3){
+        OPCION=
+    }
+
+
+    
+}
 
 
 

@@ -96,15 +96,15 @@ const { ask } = require('../helpers/input');
 
     async function main(){
         const noEstudiantes= '';
-      // const calificaciones=[]; 
-       const calificaciones = [10,70, 80, 90, 100, 85,10];       
-    //     noEstudiantes = await ask('¿Cuantos estudianes vas a calificar? \n');
-    //        for (i=0;noEstudiantes>i;i++){        
-    //        if (noEstudiantes>i){
-    //            cali = await ask('Me puedes dar la calificacion del estudiante\n');
-    //            calificaciones.push(cali);             
-    //        }
-    //        }
+     const calificaciones=[]; 
+     //const calificaciones = [10,70, 80, 90, 100, 85,10];       
+         noEstudiantes = await ask('¿Cuantos estudianes vas a calificar? \n');
+            for (i=0;noEstudiantes>i;i++){        
+            if (noEstudiantes>i){
+                cali = await ask('Me puedes dar la calificacion del estudiante\n');
+                calificaciones.push(cali);             
+            }
+            }
         const estadistica=resumenEstadistico(calificaciones);
         console.log(`El resumen estadistico de: ${calificaciones}`);
         console.log(`La calificacion mas alta es : ${estadistica.mayor}`);
